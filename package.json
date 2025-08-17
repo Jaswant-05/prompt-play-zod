@@ -1,0 +1,13 @@
+{
+  "name": "@jaswant5ingh/prompt-play-zod",
+  "version": "1.0.1",
+  "description": "Zod objects and type inferences for the backend/frontend of prompt-play",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+
+}
