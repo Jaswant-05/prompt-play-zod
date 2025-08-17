@@ -1,7 +1,8 @@
-import  { z } from "zod";
+import { z } from "zod";
+
 
 export const UserSchema = z.object({
-    username: z.email(),
+    username: z.string().email(),
     password: z.string()
         .min(8)  
         .regex(/[a-z]/, { message: "Add a lowercase letter" })
