@@ -1,6 +1,6 @@
 {
   "name": "@jaswant5ingh/prompt-play-zod",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "Zod objects and type inferences for the backend/frontend of prompt-play",
   "main": "dist/index.js",
   "scripts": {
