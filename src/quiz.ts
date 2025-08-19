@@ -19,7 +19,7 @@ export const AiQuizSchema = z.object({
 export type AiQuiz = z.infer<typeof AiQuizSchema>;
 
 export const OptionSchema = z.object({
-    id : z.number(),
+    id : z.number().optional(),
     title : z.string(),
     isCorrect : z.boolean().optional(),
     questionId : z.number().optional()
@@ -28,7 +28,7 @@ export const OptionSchema = z.object({
 export type Option = z.infer<typeof OptionSchema>
 
 export const QuestionSchema = z.object({
-    id : z.number(),
+    id : z.number().optional(),
     quizId : z.number().optional(),
     title : z.string(),
     options: z.array(OptionSchema),
@@ -39,7 +39,7 @@ export const QuestionSchema = z.object({
 export type Question = z.infer<typeof QuestionSchema>
 
 export const QuizSchema = z.object({
-    id : z.number(),
+    id : z.number().optional(),
     userId : z.number().optional(),
     code : z.string().length(6),
     topic : z.string(),
